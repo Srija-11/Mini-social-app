@@ -1,6 +1,6 @@
 # Mini Social App 🧑‍💬
 
-A simple Node.js-based social app that supports user registration, login, creating posts, liking posts, and editing them.
+A simple Node.js-based social app using CRUD operations that supports user registration, login, creating posts, liking posts, and editing them.
 
 ## 🛠️ Features
 

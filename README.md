@@ -1,31 +1,40 @@
+
 # Mini Social App 🧑‍💬
 
-A simple Node.js-based social app using CRUD operations that supports user registration, login, creating posts, liking posts, and editing them.
+A simple Node.js-based social app that supports user registration, login, creating posts, liking posts, editing, and deleting them. Additionally, users can upload a profile picture. Built with modern web technologies and a clean, user-friendly interface.
 
 ## 🛠️ Features
 
-- User authentication using JWT and cookies
-- Password hashing with bcrypt
-- Create, view, like/unlike, and edit posts
-- EJS for rendering views
-- MongoDB with Mongoose for data storage
+* **User Authentication** using JWT and cookies
+* **Password Hashing** with bcrypt
+* **CRUD Operations** for posts (Create, Read, Update, Delete)
+* **Like/Unlike Posts** functionality
+* **Image Upload** for profile pictures using Multer
+* **EJS** for rendering dynamic views
+* **MongoDB** with **Mongoose** for data storage
+* **Responsive UI** with **Tailwind CSS**
+
+---
 
 ## 🚀 Tech Stack
 
-- **Backend**: Node.js, Express.js
-- **Frontend**: EJS, Tailwind CSS (via CDN)
-- **Database**: MongoDB (Mongoose ODM)
-- **Auth**: JWT, bcrypt
+* **Backend**: Node.js, Express.js
+* **Frontend**: EJS, Tailwind CSS (via CDN)
+* **Database**: MongoDB (Mongoose ODM)
+* **Auth**: JWT (JSON Web Tokens), bcrypt (Password Hashing)
+* **File Upload**: Multer (for profile pictures)
+* **Styling**: Tailwind CSS
 
+---
 
-Follow these steps to set up and run the project locally:
+## ⚙️ Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/mini-social-app.git
 cd mini-social-app
-````
+```
 
 ### 2. Install Dependencies
 
@@ -35,25 +44,30 @@ npm install
 
 ### 3. Set Up MongoDB
 
-Ensure you have MongoDB installed and running on your machine. The app connects to a local MongoDB instance by default:
+Make sure MongoDB is installed and running on your machine or use a cloud MongoDB service.
 
-```bash
+For a local MongoDB setup, use the default URI:
+
+```
 mongodb://localhost:27017/socialapp
 ```
 
-You can change the connection string inside `models/user.js` and `models/post.js` if needed.
+Alternatively, if you are using MongoDB Atlas or another cloud service, update the connection string in the application accordingly.
 
-Alternatively, start MongoDB with Docker:
+### 4. Create Uploads Folder
 
-```bash
-docker run -d -p 27017:27017 --name social-mongo mongo
+Make sure there is an `uploads` folder inside the `/public` directory to store uploaded profile pictures:
+
+```
+/public/uploads
 ```
 
-### 4. Run the App
+### 5. Run the App
+
+To start the application:
 
 ```bash
 node app.js
 ```
 
-Visit the app at: [http://localhost:3000](http://localhost:3000)
-
+Visit `http://localhost:3000` in your browser.

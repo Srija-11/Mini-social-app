@@ -70,4 +70,4 @@ To start the application:
 node app.js
 ```
 
-Visit `http://localhost:3000` in your browser.
+Visit the app at: http://localhost:3000
